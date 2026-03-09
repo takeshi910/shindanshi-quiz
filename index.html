@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中小企業診断士 クイズアプリ Ver.4</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Firebase compat SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-    <script>
-    firebase.initializeApp({
-        apiKey: "AIzaSyASkdbPM_ULuuvy5RpI4ovkxARt6nYjj6w",
-        authDomain: "shindanshi-app.firebaseapp.com",
-        projectId: "shindanshi-app",
-        storageBucket: "shindanshi-app.firebasestorage.app",
-        messagingSenderId: "939768347803",
-        appId: "1:939768347803:web:40f3aa2a2e2a27f9b51a3e",
-        measurementId: "G-KFG3TJ05HG"
-    });
-    </script>
-    <style>
-        body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;ackground:linear-gradient(135deg,#1e1b4b 0%,#312e81 50%,#4c1d95 100%);min-height:100vh;}
-        .fade-in{animation:fadeIn 0.4s ease-out forwards;}
-        @keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
-        .option-btn{transition:all 0.2s ease;border:2px solid transparent;}
-        .option-btn:hover:not(:disabled){transform:translateX(4px);}
-        ::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.2);border-radius:3px;}
-        @keyframes spin{to{transform:rotate(360deg);}}.animate-spin{animation:spin 1s linear infinite;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中小企業診断士 クイズアプリ Ver.4</title>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script>
+firebase.initializeApp({
+apiKey: "AIzaSyASkdbPM_ULuuvy5RpI4ovkxARt6nYjj6w",
+authDomain: "shindanshi-app.firebaseapp.com",
+projectId: "shindanshi-app",
+storageBucket: "shindanshi-app.firebasestorage.app",
+messagingSenderId: "939768347803",
+appId: "1:939768347803:web:40f3aa2a2e2a27f9b51a3e",
+measurementId: "G-KFG3TJ05HG"
+});
+</script>
+<style>
+body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;ackground:linear-gradient(135deg,#1e1b4b 0%,#312e81 50%,#4c1d95 100%);min-height:100vh;}
+.fade-in{animation:fadeIn 0.4s ease-out forwards;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.option-btn{transition:all 0.2s ease;border:2px solid transparent;}
+.option-btn:hover:not(:disabled){transform:translateX(4px);}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.2);border-radius:3px;}
+@keyframes spin{to{transform:rotate(360deg);}}.animate-spin{animation:spin 1s linear infinite;}
+</style>
 </head>
 <body class="p-3 md:p-5 flex items-start justify-center min-h-screen">
 <div id="root" class="w-full max-w-2xl"></div>
@@ -214,6 +213,182 @@ const quizData = [{id:1,questionText:"第1問\n\n日本の2022年の名目国内
         correctAnswer: "ウ",
         explanation: "1ドル132円で買う権利（コール）のため、市場が132円より円安（135円等）のときに権利を行使し（A）、円高（129円等）のときは放棄して市場で調達します（B）。135円のとき権利行使すると、総支出は 132円×1,200 ＋ 100円(オプション料) = 158,500円。オプション無しなら 135円×1,200 = 162,000円。差額は 162,000 - 158,500 = 3,500円（C）少なくなります。"
     },
+
+    {
+        id: 25,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 26,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 27,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 28,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 29,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 30,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 31,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 32,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 33,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 34,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 35,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 36,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 37,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 38,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 39,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 40,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 41,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 42,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 43,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 44,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 45,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 46,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 47,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 48,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        id: 49,
+        questionText: "【R4 財務・会計】 \n\n",
+        options: [{id: 'ア', text: ""}, {id: 'イ', text: ""}, {id: 'ウ', text: ""}, {id: 'エ', text: ""}],
+        correctAnswer: "",
+        explanation: ""
+    },
 ];
 
 // ===== FIREBASE HELPERS =====
@@ -251,7 +426,7 @@ const questionGroups = [
     [16,17], // 第16問 設問1&2
     [18],[19],[20],
     [21,22], // 第20問 設問1&2
-    [23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36,37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36,37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48]
+    [23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36,37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36,37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36,37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48]
 ];
 
 function shuffle(arr) {
@@ -702,5 +877,9 @@ const QuizApp = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(<QuizApp/>);
     </script>
+</body>
+</html>
+
+</script>
 </body>
 </html>
